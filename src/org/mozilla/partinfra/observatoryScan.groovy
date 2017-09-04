@@ -11,7 +11,7 @@ import groovy.json.JsonSlurperClassic
 
 class observatoryScan implements Serializable {
     String url
-    String observatory_endpoint = "https://http-observatory.security.mozilla.org"
+    private String observatory_endpoint = "https://http-observatory.security.mozilla.org"
     observatoryScan(String url) {
         this.url = url
     }
@@ -50,5 +50,5 @@ class observatoryScan implements Serializable {
             }
         }
         return text
-    }        
+    }
 }
